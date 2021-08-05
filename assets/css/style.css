@@ -1,0 +1,12 @@
+#box {
+    /* background-color: gray; */
+    width: 100px; 
+    height: 100px; 
+    position: absolute;
+    left: 200px; 
+    top: 200px;
+}
+
+#ratoM {
+    width: 100%;
+}
