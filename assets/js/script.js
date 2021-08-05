@@ -1,11 +1,9 @@
-
 let boxLeft = 200
 let boxTop = 200
 
 document.addEventListener('keydown', (event) => {
     const keyName = event.key;
     const box = document.getElementById('box')
-    
 
     switch (keyName) {
         case 'ArrowLeft':
@@ -22,15 +20,15 @@ document.addEventListener('keydown', (event) => {
         break;
 
         case 'ArrowUp':
-                boxTop-=10
-                box.style.top = `${boxTop}px`
+            boxTop-=10
+            box.style.top = `${boxTop}px`
             document.getElementById('ratoM').style.transform = 'rotate(180deg)'
 
         break;
 
         case 'ArrowDown':
-                boxTop+=10
-                box.style.top = `${boxTop}px`
+            boxTop+=10
+            box.style.top = `${boxTop}px`
             document.getElementById('ratoM').style.transform = 'rotate(0deg)'
 
         break;
@@ -38,9 +36,4 @@ document.addEventListener('keydown', (event) => {
         default:
             break;
     }
-
-    console.log('keydown event\n\n' + 'key: ' + keyName);
-
-
-
 });
